@@ -68,10 +68,8 @@
 
 {{- if .Site.Params.selfHosted -}}
 <script src="{{ "js/jquery-3.5.1.slim.min.js" | absURL }}"></script>
-<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
 {{- else -}}
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 {{- end }}
 
 <script src="{{ "js/main.js" | absURL }}"></script>
