@@ -66,12 +66,6 @@
   </div>
 </footer>
 
-{{- if  .Site.Params.useHLJS }}
-<script src="{{ "js/highlight.min.js" | absURL }}"></script>
-<script> hljs.initHighlightingOnLoad(); </script>
-<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script>
-{{- end -}}
-
 <!-- Google Custom Search Engine -->
 {{ if .Site.Params.gcse }}
 <script>
