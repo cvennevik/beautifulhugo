@@ -9,11 +9,6 @@
         {{ if .Params.image }}
         <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-title" />
         {{ end }}
-        {{ if .Params.video }}
-        <video loop autoplay muted playsinline class="img-title">
-            <source src="{{ .Params.video }}">
-        </video>
-        {{ end }}
     </a>
 
     <p class="post-meta">

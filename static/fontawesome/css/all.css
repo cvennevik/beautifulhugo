@@ -1540,9 +1540,6 @@ readers do not read off random characters that represent icons */
 .fa-file-upload:before {
   content: "\f574"; }
 
-.fa-file-video:before {
-  content: "\f1c8"; }
-
 .fa-file-word:before {
   content: "\f1c2"; }
 
@@ -4023,12 +4020,6 @@ readers do not read off random characters that represent icons */
 
 .fa-viber:before {
   content: "\f409"; }
-
-.fa-video:before {
-  content: "\f03d"; }
-
-.fa-video-slash:before {
-  content: "\f4e2"; }
 
 .fa-vihara:before {
   content: "\f6a7"; }
