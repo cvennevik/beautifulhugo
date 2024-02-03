@@ -1,17 +1,14 @@
 # Beautiful Hugo - An adaptation of the Beautiful Jekyll theme
 
-![Beautiful Hugo Theme Screenshot](https://github.com/halogenica/beautifulhugo/blob/master/images/screenshot.png)
-
-## Live demo
-
-See https://hugo-theme-beautifulhugo.netlify.app/
+...but torn apart by me, the forker.
 
 ## Installation
 
-    $ mkdir themes
-    $ cd themes
-    $ git submodule add https://github.com/halogenica/beautifulhugo.git beautifulhugo
-    
+```sh
+mkdir themes
+cd themes
+git submodule add https://github.com/halogenica/beautifulhugo.git beautifulhugo
+```
 
 See [the Hugo documentation](https://gohugo.io/themes/installing/) for more information.
 
@@ -29,57 +26,16 @@ This theme has support for either Hugo's lightning fast Chroma, or both server s
 
 To enable Chroma, add the following to your site parameters:
 
-```
+```toml
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 ```
 
 Then, you can generate a different style by running:
 
-```
+```sh
 hugo gen chromastyles --style=trac > static/css/syntax.css
 ```
-
-#### Pygments - Old server side syntax highlighting
-
-To use this feature install Pygments (`pip install Pygments`) and add the following to your site parameters:
-
-```
-pygmentsStyle = "trac"
-pygmentsUseClassic = true
-```
-
-Pygments is mostly compatable with the newer Chroma. It is slower but has some additional theme options. I recommend Chroma over Pygments. Pygments will use `syntax.css` for highlighting, unless you also set the config `pygmentsUseClasses = false` which will generate the style code directly in the HTML file. 
-
-#### Highlight.js - Client side syntax highlighting
-
-(cvennevik: I removed this)
-
-### Disqus support
-
-To use this feature, uncomment and fill out the `disqusShortname` parameter in `config.toml`.
-
-### Staticman support
-
-(cvennevik: I removed this!)
-
-### Google Analytics
-
-To add Google Analytics, simply sign up to [Google Analytics](https://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `googleAnalytics` parameter in `config.toml`.
-
-Note that the Google Analytics tracking code will only be inserted into the page when the site isn't served on Hugo's built-in server, to prevent tracking from local testing environments.
-
-### Commit SHA on the footer
-
-If the source of your site is in a Git repo, the SHA corresponding to the commit the site is built from can be shown on the footer. To do so, two site parameters `commit` has to be defined in the config file `config.toml`:
-
-```
-enableGitInfo = true
-[Params]
-  commit = "https://github.com/<username>/<siterepo>/tree/"
-```
-
-See at [vincenttam/vincenttam.gitlab.io](https://gitlab.com/vincenttam/vincenttam.gitlab.io) for an example of how to add it to a continuous integration system.
 
 ### Multilingual
 
@@ -100,23 +56,13 @@ languages available.
 
 Now you just need to create a subdir within the `content/` folder for each
 language and just put stuff inside `page/` and `post/` regular directories.
-```
+
+```text
 content/      content/      content/  
 └── en/       └── br/       └── ja/ 
     ├── page/     ├── page/     ├── page/
     └── post/     └── post/     └── post/
 
-```
-
-### Self Hosted assets for GDPR / EU-DSGVO compliance
-
-With default settings, visiting to a website using Beautifulhugo connects also to remote services like google fonts or jsdelivr to embed fonts, js and other assets.
-
-To avoid this, set the following param in config.toml:
-
-```
-[Params]
-  selfHosted = true
 ```
 
 ### Extra shortcodes
@@ -127,7 +73,7 @@ There are two extra shortcodes provided (along with the customized figure shortc
 
 This simply adds the html5 detail attribute, supported on all *modern* browsers. Use it like this:
 
-```
+```hugo
 {{< details "This is the details title (click to expand)" >}}
 This is the content (hidden until clicked).
 {{< /details >}}
@@ -137,17 +83,13 @@ This is the content (hidden until clicked).
 
 This adds a two column side-by-side environment (will turn into 1 col for narrow devices):
 
-```
+```hugo
 {{< columns >}}
 This is column 1.
 {{< column >}}
 This is column 2.
 {{< endcolumns >}}
 ```
-
-## About
-
-This is an adaptation of the Jekyll theme [Beautiful Jekyll](https://deanattali.com/beautiful-jekyll/) by [Dean Attali](https://deanattali.com/aboutme#contact). It supports most of the features of the original theme, and many new features. It has diverged from the Jekyll theme over time, with years of community updates.
 
 ## License
 
