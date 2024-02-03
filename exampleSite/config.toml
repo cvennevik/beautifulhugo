@@ -19,7 +19,6 @@ pygmentsCodefencesGuessSyntax = true
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
-  comments = true
   readingTime = true
   wordCount = true
   socialShare = true

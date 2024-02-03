@@ -1009,12 +1009,6 @@ readers do not read off random characters that represent icons */
 .fa-comment-slash:before {
   content: "\f4b3"; }
 
-.fa-comments:before {
-  content: "\f086"; }
-
-.fa-comments-dollar:before {
-  content: "\f653"; }
-
 .fa-compact-disc:before {
   content: "\f51f"; }
 
