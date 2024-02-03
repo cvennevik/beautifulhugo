@@ -26,7 +26,6 @@
 - id: words
   translation: "ord"
 
-
 # 404 page
 - id: pageNotFound
   translation: "Oisann! Denne siden finnes visst ikke. Prøv noe annet. (404 feil)"
@@ -67,7 +66,7 @@
 - id: show
   translation: "Vis"
 - id: comments
-  translation: "kommentarer" 
+  translation: "kommentarer"
 
 # Related posts
 - id: seeAlso
