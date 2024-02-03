@@ -2,13 +2,6 @@ baseurl = "https://username.github.io"
 DefaultContentLanguage = "en"
 title = "Beautiful Hugo"
 theme = "beautifulhugo"
-pygmentsStyle = "trac"
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
-#pygmentsUseClassic = true
-#pygmentOptions = "linenos=inline"
-#googleAnalytics = "XXX"
 
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
@@ -19,7 +12,6 @@ pygmentsCodefencesGuessSyntax = true
   dateFormat = "January 2, 2006"
   rss = true
   showRelatedPosts = true
-#  hideNavbarButton = true
 
 #[[Params.bigimg]]
 #  src = "img/triangle.jpg"
@@ -40,41 +32,3 @@ pygmentsCodefencesGuessSyntax = true
   email = "youremail@domain.com"
   twitter = "username"
   mastodon = "url"
-
-[[menu.main]]
-    name = "Blog"
-    url = ""
-    weight = 1
-
-[[menu.main]]
-    name = "About"
-    url = "page/about/"
-    weight = 3
-
-[[menu.main]]
-    identifier = "samples"
-    name = "Samples"
-    weight = 2
-
-[[menu.main]]
-    parent = "samples"
-    name = "Big Image Sample"
-    url = "post/2017-03-07-bigimg-sample"
-    weight = 1
-
-[[menu.main]]
-    parent = "samples"
-    name = "Math Sample"
-    url = "post/2017-03-05-math-sample"
-    weight = 2
-
-[[menu.main]]
-    parent = "samples"
-    name = "Code Sample"
-    url = "post/2016-03-08-code-sample"
-    weight = 3
-
-[[menu.main]]
-    name = "Tags"
-    url = "tags"
-    weight = 3
